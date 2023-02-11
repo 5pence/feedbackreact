@@ -52,6 +52,12 @@ header {
   text-align: center;
 }
 
+.spinner {
+  width: 100px;
+  margin: auto;
+  display: block;
+}
+
 .rating {
   display: flex;
   align-items: center;

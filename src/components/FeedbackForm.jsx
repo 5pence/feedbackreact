@@ -15,7 +15,7 @@ function FeedbackForm() {
 
   useEffect(() => {
     if (feedbackEdit.edit) {
-      setRatingScore(feedbackEdit.item.rating)
+      setRatingScore(feedbackEdit.item.ratingScore)
       setFeedbackText(feedbackEdit.item.text)
       setBtnDisabled(false)
       setValidationMessage('')
@@ -58,7 +58,7 @@ function FeedbackForm() {
     <Card>
       <form onSubmit={handleSubmit}>
         <h2>How do you rate your service?</h2>
-        <RatingSelect select={(rating) => setRatingScore(rating)}/>
+        <RatingSelect select={(ratingScore) => setRatingScore(ratingScore)}/>
         <div className="input-group">
           <input 
             onChange={handleTextChange} 
